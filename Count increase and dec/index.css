@@ -1,0 +1,26 @@
+.counter{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.count{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 80px;
+    font-weight: bolder;
+}
+.button{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 100;
+    border-radius: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+.total{
+    padding: 30px;
+    margin-top: 150px;
+}
