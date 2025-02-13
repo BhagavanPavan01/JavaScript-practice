@@ -1,0 +1,26 @@
+.para{
+    font-family: Robot;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.image-size{
+    height: 30px;
+}
+.guess-bg-container{
+    background-color: blueviolet;
+    height: 100vh;
+}
+.btn{
+    padding: 30px;
+    margin-top: 20px;
+}
+.guess-game-img {
+    width: 100%;
+}
+.guess-heading {
+    font-family: "Roboto";
+    font-weight: bold;
+    color: white;
+    font-size: 34px;
+  }
