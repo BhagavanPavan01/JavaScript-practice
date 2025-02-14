@@ -10,7 +10,7 @@ function checkGuess() {
         gameResult.style.backgroundColor = "#e74c3c"; // Red for error
     } else if (guessedNumber > randomNumber) {
         gameResult.textContent = "Too High! Try Again";
-        gameResult.style.backgroundColor = "#1e217c"; // Fixed semicolon
+        gameResult.style.backgroundColor = "red"; // Fixed semicolon
     } else if (guessedNumber < randomNumber) {
         gameResult.textContent = "Too Low! Try Again";
         gameResult.style.backgroundColor = "#f39c12"; // Orange for hint
