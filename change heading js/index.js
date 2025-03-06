@@ -18,4 +18,7 @@ removeStyleBtnElement.onclick = function(){
 };
 document.getElementById('myContainer').appendChild(removeStyleBtnElement);
 
- 
+ let h2Element = document.createElement('h2');
+ h2Element.textContent = "pedada gayathri";
+ let containerElement = document.getElementById('ourContainer'); 
+ containerElement.appendChild(h2Element);
