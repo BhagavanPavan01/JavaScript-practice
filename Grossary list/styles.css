@@ -1,0 +1,44 @@
+.bg-container{
+    background-color: blueviolet;
+    height: 100vh;
+    padding: 30px;
+
+}
+
+.list-container{
+    
+    background-color: aliceblue;
+    border-radius: 6px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 45px;
+    padding-right: 45px;
+
+}
+
+.list-container-block{
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 100px;
+}
+
+
+.h1{
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+
+.delivery-text{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: white;
+    padding-left: 10px;
+}
+
+.button{
+    margin-top: 30px;
+}

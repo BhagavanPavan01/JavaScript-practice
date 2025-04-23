@@ -1,0 +1,36 @@
+.Counter{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: 3000;
+    text-align: center;
+    margin-top: 0px;
+    padding: 30px;
+}
+
+.btn-counter {
+    padding: 10px 20px; /* Add padding for better appearance */
+    color: rgb(250, 0, 0); /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Optional: rounded corners */
+    cursor: pointer; /* Show pointer on hover */
+}
+
+.Counter-number{
+    text-align: center;
+    font-family: initial;
+    font-size: 150px;
+}
+
+body {
+    display: grid;
+    place-items: center; /* Centers both horizontally and vertically */
+    height: 100vh;
+    margin: 0;
+}
+
+.body-container {
+    width: 500px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    padding: 20px;
+}

@@ -1,0 +1,120 @@
+body {
+  background-color: aliceblue;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 80px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  font-weight: 200;
+  text-align: left;
+}
+
+.input {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 10px auto;
+}
+
+.add-container {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 30px auto;
+  margin-left: 100px;
+  background-color: blue;
+  border-radius: 5px;
+  width: 8%;
+}
+
+.create-task {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding: 10px;
+  margin: 25px 0 0 100px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 30px auto;
+  color: white;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-item-container {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.checkbox-input{
+  margin-left: 40px;
+}
+
+.label-container {
+  background-color: rgb(22, 232, 232);
+  border-left: 5px solid black;
+  border-radius: 3px;
+  color: black;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 100px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.checkbox-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+  
+}
+
+.delete-icon-container {
+  text-align: right;
+  cursor: pointer;
+}
+
+.delete-icon-container i {
+  font-size: 20px;
+  color: rgb(184, 10, 10);
+}
+
+.delete-icon{
+  padding: 10px;
+}
+
+
+.checked{
+  text-decoration: line-through;
+}
+

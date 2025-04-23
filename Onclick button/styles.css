@@ -1,0 +1,80 @@
+/* Basic styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    opacity: 0; /* Initially hidden */
+}
+
+/* Slide-in animations */
+@keyframes slideFromLeft {
+    0% { transform: translateX(-100vw); opacity: 0; }
+    80% { transform: translateX(5%); opacity: 1; } 
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideFromRight {
+    0% { transform: translateX(100vw); opacity: 0; }
+    80% { transform: translateX(-5%); opacity: 1; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideFromTop {
+    0% { transform: translateY(-100vh); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideFromBottom {
+    0% { transform: translateY(100vh); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Assign animations with different delays */
+.slide-left { animation: slideFromLeft 0.9s ease-out forwards; }
+.slide-right { animation: slideFromRight 0.8s ease-out forwards 0.2s; }
+.slide-top { animation: slideFromTop 0.8s ease-out forwards 0.4s; }
+.slide-bottom { animation: slideFromBottom 0.8s ease-out forwards 0.6s; }
+
+/* Assign animations with slow easing */
+.slide-left { animation: slideFromLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards; }
+.slide-right { animation: slideFromRight 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards 0.2s; }
+
+
+/* Smooth slide-in from left */
+@keyframes smoothSlideFromLeft {
+    0% { transform: translateX(-100vw); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Smooth slide-in from right */
+@keyframes smoothSlideFromRight {
+    0% { transform: translateX(100vw); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Apply animations with a slow-down effect */
+.smooth-slide-left { 
+    animation: smoothSlideFromLeft 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards; 
+}
+
+.smooth-slide-right { 
+    animation: smoothSlideFromRight 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards 0.3s; 
+}

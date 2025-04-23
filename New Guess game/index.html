@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="d-flex align-items-center justify-content-center vh-100 bg-light">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="container-card">
+                    <h1 class="heading">Guess The Number</h1>
+                    <p class="para">Pick the number between 1 to 100</p>
+                    <div class="input-element">
+                        <input id="userInput" type="text" min="1" max="100">
+                    </div>
+                    <div>
+                        <button onclick="checkGuess()" class="input-element">Check Your Number</button>
+                    </div>
+                    <div id="gameResult" class="game-result"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

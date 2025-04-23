@@ -70,3 +70,16 @@ createAndAppendTodo(todoList[2]); */
  for (let eachTodo of todoList){
     createAndAppendTodo(eachTodo);
  }
+
+
+
+
+ let inputElement = document.createElement('input');
+inputElement.type = "checkbox";
+inputElement.id = "onclick";
+document.body.appendChild(inputElement);
+
+let labelElementn = document.createElement('label');
+labelElementn.setAttribute("for","onclick");
+labelElementn.textContent = "clickme";
+document.body.appendChild(labelElementn);

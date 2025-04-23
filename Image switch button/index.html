@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <h1 id ="headingElement">Bhagavan pavan</h1>
+    <button onclick="manipulateStyles()">Changee color</button>
+
+    <div>
+        <div class="container">
+        <div>
+            <img src="https://i.pinimg.com/736x/31/8e/52/318e52abb1d1c010b025ec9087863cb5.jpg" alt="bulbimage" class="bulb-img" id="offlight">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6WjTh5E2GzviinUTCZ10aOhf2U65S912W0uhuEhpDeSi4rEAcNj3yFxiwKf1YIWOk5hw&usqp=CAU" alt="bulbimage" class="bulb-img" id="offimage">
+        </div>
+
+        <div class="swithchedStatus">
+            <p id="switchstatus">Switched ON</p>
+        </div>
+
+        <div class="d-flex justify-content-center gap-3 mt-5">
+            <button class="button-on" onclick="switchOn()" id="switchOffcolor">ON</button>
+            <button class="button-off" onclick="switchOff()" id="switchONcolor">OFF</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

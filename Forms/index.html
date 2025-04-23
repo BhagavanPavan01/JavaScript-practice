@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="form-heading">Add User</h1>
+        <form id="myForm">
+            <div class="mb-3">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                <p class="errorMessage" id="nameErrMsg"></p>
+            </div>
+            <div class="mb-3">
+                <label for="phone">Phone</label>
+                <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                <p class="errorMessage" id="phoneErrMsg"></p>
+            </div>
+            <div class="mb-3">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter your email">
+                <p class="errorMessage" id="emailErrMsg"></p>
+            </div>
+            <div class="mb-3">
+                <label for="status">Working Status</label>
+                <select id="status" class="form-control">
+                    <option value="Select" selected>Select</option>
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <h1 class="gender-field-heading">Gender</h1>
+                <input type="radio" id="genderMale" value="Male" name="gender" checked>
+                <label for="radio">Male</label>
+                <input type="radio" class="ml-2" id="genderFemale" value="Female" name="gender">
+                <label for="radio">Female</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

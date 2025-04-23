@@ -1,0 +1,37 @@
+.container-card{
+    height: auto;
+    width: 500px;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 30px;
+}
+
+.heading{
+    text-align: center;
+}
+
+.para{
+    text-align: center;
+}
+
+.input-element {
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Add padding for better appearance */
+    display: block; /* Ensures proper alignment */
+    margin: 0 auto; /* Centers horizontally inside a parent */
+    text-align: center; /* Centers text inside the input */
+}
+
+.input-element input {
+    text-align: center; /* Centers text inside the input field */
+    font-size: 30px;
+}
+
+
+.game-result{
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}

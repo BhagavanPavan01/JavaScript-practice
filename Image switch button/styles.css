@@ -1,0 +1,44 @@
+.bulb-img{
+    justify-content: center;
+    border-radius: 20px;
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+.container{
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+
+.button-on {
+    color: green;
+    display: block; /* Ensures it's a block element */
+    margin: 50px auto; /* Centers horizontally with 50px margin */
+    text-align: right; /* Not needed for a button, but okay for text elements */
+    padding: 10px 20px;
+    border: 2px solid green;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+.button-off {
+    color: rgb(255, 0, 0);
+    display: block; /* Ensures it's a block element */
+    margin: 50px auto; /* Centers horizontally with 50px margin */
+    text-align: left; /* Not needed for a button, but okay for text elements */
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 0, 0);
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.swithchedStatus{
+    color: white;
+    text-align: center;
+    font-size: large;}
