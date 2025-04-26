@@ -316,22 +316,146 @@
 
 
 
-const myObj = {
-    name: "John",
-    age: 30, 
-    city: "New York"
-}
+// const myObj = {
+//     name: "John",
+//     age: 30, 
+//     city: "New York"
+// }
 
 
-let myObj2 = {
-    ...myObj,
-    DOB : "1990-01-01",
-    phone : "1234567890"
-} 
+// let myObj2 = {
+//     ...myObj,
+//     DOB : "1990-01-01",
+//     phone : "1234567890"
+// } 
 
-// console.log(myObj2);
+// // console.log(myObj2);
 
-myObj = {};
+// myObj = {};
+// console.log(myObj)
 
-console.log(myObj)
 
+
+// let myArray = new Array(10,20,30,40,50,60,70,80,90,100);
+// myArray.push(1000);
+// // console.log(Array.prototype);
+
+// // console.log(myObj2);
+
+// console.log(Object.getPrototypeOf(myArray)); 
+
+
+// let Car = new Function("color,brand",`this.color = color;
+//     this.brand = brand;
+//     this.start = function(){
+//         console.log("started");
+//     };`);
+
+// let car1 = new Car("red", "BMW");
+// console.log(Car.prototype);
+// console.log(car1);
+// console.log(Object.getPrototypeOf(car1));
+
+
+
+
+// function Person(firstName, lastName){
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+// }
+
+// Person.prototype.displayFullName = function(){
+//     console.log(this.firstName + " " + this.lastName);
+// }
+// // console.log(Person.prototype);
+// let person1 = new Person("Virat", "Kohili");
+
+// console.log(person1.displayFullName());
+// console.log(Object.getOwnPropertyNames(person1));
+
+
+
+// class Person{
+//     constructor(firstName, lastName){
+//         this.firstName  = firstName;
+//         this.lastName =  lastName
+//     }
+
+//     displayFullName(){
+//         console.log(this.firstName + " "+ this.lastName);
+//     }
+// } 
+
+
+// let person1 = new Person("Bhagavan","Pavan");
+// let person2 = new Person("Pedada","Gayathri");
+// // console.log(Object.getPrototypeOf(person1));
+// // console.log(Person.prototype);
+
+// console.log(person1);
+// console.log(person2);
+
+// console.log(typeof(Person));
+
+
+// ---------------------------------------------Inheritance-----------------------------------
+
+
+// class Animal {
+//     constructor(name){
+//         this.name = name;
+//     }
+//     eat(){
+//         return `${this.name} is eating`;
+//     }
+//     makeSound(){
+//         return this;
+//     }
+// }
+
+
+// class Dog extends Animal {
+//     constructor(name, breed){
+//         super(name);
+//         this.breed = breed;
+//     }
+//     sniff(){
+//         return `${this.name} is Sniffing`;
+//     }
+// }
+
+
+// let someDog = new Dog("Tommy", "Labrador");
+// console.log(someDog.makeSound()); 
+
+
+
+// alert("Hello World!");
+// alert("Bhagavan Pavan");
+// alert("Welcome to JavaScript!");
+
+
+
+const url = "https://gorest.co.in/my-account/access-tokens ";
+let responceObject = fetch(url);
+    // .then((responce) => {
+    //     return responce.json();
+    // })
+    // .then((jsonData) => {
+    //     console.log(jsonData);
+    // });
+
+
+// console.log(responceObject); // Output: Promise { <pending> }
+// console.log("Fetching done!");
+
+
+responceObject.then((responce) => {
+    console.log(responce.json());
+})
+.then((data) => {
+    console.log(data);
+})
+.catch((error) => {
+    console.log(error);
+})
