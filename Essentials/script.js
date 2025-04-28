@@ -436,26 +436,118 @@
 
 
 
-const url = "https://gorest.co.in/my-account/access-tokens ";
-let responceObject = fetch(url);
-    // .then((responce) => {
-    //     return responce.json();
-    // })
-    // .then((jsonData) => {
-    //     console.log(jsonData);
-    // });
+// const url = "https://gorest.co.in/my-account/access-tokens ";
+// let responceObject = fetch(url);
+//     // .then((responce) => {
+//     //     return responce.json();
+//     // })
+//     // .then((jsonData) => {
+//     //     console.log(jsonData);
+//     // });
 
 
-// console.log(responceObject); // Output: Promise { <pending> }
-// console.log("Fetching done!");
+// // console.log(responceObject); // Output: Promise { <pending> }
+// // console.log("Fetching done!");
 
 
-responceObject.then((responce) => {
-    console.log(responce.json());
-})
-.then((data) => {
-    console.log(data);
-})
-.catch((error) => {
-    console.log(error);
-})
+// responceObject.then((responce) => {
+//     console.log(responce.json());
+// })
+// .then((data) => {
+//     console.log(data);
+// })
+// .catch((error) => {
+//     console.log(error);
+// })
+
+
+
+// // -------------------------Promise Object ------------------
+// // -------------resolve
+// const myPromise = () => {
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             resolve("1 second completed");
+//         },1000);
+//     });
+// };
+
+// myPromise().then((fromeResolve)=>{
+//     console.log(fromeResolve);
+// });
+
+
+// // // -------------reject
+
+// const myPromise = () => {
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             reject("promise Rejected");
+//         },1000);
+//     });
+// };
+
+// console.log(myPromise());
+// myPromise().then((fromeResolve)=>{
+//     console.log(fromeResolve);
+// }).catch((fromReject) => {
+//     console.log(fromReject);
+// });
+
+
+
+// --------------------------Async / Await --------------------------
+
+
+
+// const URL = "https://apis.ccbp.in/jokes/random";
+// const doNetworkCall = async () => {
+//     try {
+//     const response = await fetch(URL);
+//     const jsonData = await response.json();
+//     console.log(jsonData);
+//     }
+//     catch (error) {
+//         console.log(error);
+//     }
+
+
+// };
+// const asyncPromise = doNetworkCall();
+// console.log(asyncPromise);
+
+
+// ------String trim----------
+
+// const  myString = "            Hello World!                 ";
+// console.log(myString);
+// console.log(myString.trim()); 
+
+
+
+// // -----------string slice-------------
+
+// const text = "Hello World!";
+// console.log(text.slice(0,5));
+// console.log(text.slice(6,9));
+
+// let x = 10;
+// let y = 20;
+
+
+// let add =  (x,y) =>{
+//     return x+y;
+// }
+
+// let result = add(x,y);
+// console.log(result);
+
+
+// const numbers = [1,2,3,4,5,6,7,8,9,10];
+// const result = numbers.map((number) => number * number);
+// console.log(result);
+
+
+let arr = [1,2,3,4,5,6,7,8,9,10];
+let outputValue = arr.reduce((acc,currentValue) => acc + currentValue);
+console.log(outputValue);
